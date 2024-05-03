@@ -1,4 +1,6 @@
+import Tag from "../../components/Tag"
 import Padding from "../../layout/Padding"
+import Spaced from "../../layout/Spaced"
 import WithRoundedBorder from "../../layout/WithRoundedBorder"
 import "./style.css"
 
@@ -9,22 +11,34 @@ export default function Home() {
         <div id="page-home">
 
             <WithRoundedBorder>
-                <img src="./profile-picture.jpg" />
+                <img src="./profile-picture.jpg" alt="Joe Boylson" />
             </WithRoundedBorder>
 
             <WithRoundedBorder>
                 <Padding padding={16}>
-                    <p><strong>Joe Boylson Tech LLC</strong></p>
-                    <p>Full Stack Developer, Analogue Photography Hobbyist, Specialty Coffee Enthusiast</p>
-                    <p>
-                        <a href="mailto:joeboylson@gmail.com">Email</a> /
-                        <a href="https://www.linkedin.com/in/joeboylson/">LinkedIn</a> /
+                    <Spaced spacing={8}>
+                        <p><strong>Joe Boylson Tech LLC</strong></p>
+                        <p>Web & App Developer, Analogue Photography Hobbyist, Specialty Coffee Enthusiast</p>
+                        <a href="mailto:joeboylson@gmail.com">Email</a>
+                        <a href="https://www.linkedin.com/in/joeboylson/">LinkedIn</a>
                         <a href="https://instagram.com/jobo.jpg">Instagram</a>
-                    </p>
+                    </Spaced>
                 </Padding>
             </WithRoundedBorder>
 
-        </div>
+            <WithRoundedBorder>
+                <Padding padding={16}>
+                    <Spaced spacing={8}>
+                        <Tag>May 3rd, 2024</Tag>
+                        <p><strong>Hey there, check out the <i>PlaceLift</i> on the app store.</strong></p>
+                        <p><a href="https://instagram.com/jobo.jpg">Visit our homepage</a></p>
+                        <p><a href="mailto:joeboylson@gmail.com">Download for iOS</a></p>
+                        <p><a href="https://www.linkedin.com/in/joeboylson/">Download for Android</a></p>
+                    </Spaced>
+
+                </Padding >
+            </WithRoundedBorder >
+        </div >
     )
 
 }
