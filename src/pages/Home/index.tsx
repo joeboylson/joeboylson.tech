@@ -21,7 +21,6 @@ export default function Home() {
                         <p>Web & App Developer, Analogue Photography Hobbyist, Specialty Coffee Enthusiast</p>
                         <a href="mailto:joeboylson@gmail.com">Email</a>
                         <a href="https://www.linkedin.com/in/joeboylson/">LinkedIn</a>
-                        <a href="https://instagram.com/jobo.jpg">Instagram</a>
                     </Spaced>
                 </Padding>
             </WithRoundedBorder>
