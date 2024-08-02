@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { WithChildren } from "../../types";
 
 type _props = WithChildren & {
-  sizeL: 5 | 3 | 2 | 1;
+  sizeL: 5 | 4 | 3 | 2 | 1;
   sizeM: 3 | 2 | 1;
 };
 

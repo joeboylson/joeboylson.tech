@@ -18,6 +18,10 @@ const PageWrapperBody = styled("div")`
   overflow-x: hidden;
 `;
 
+const PageBottomSpacer = styled("div")`
+  height: 120px;
+`;
+
 const WindowCoordinates = styled("div")`
   position: fixed;
   top: 4px;
@@ -49,7 +53,10 @@ export default function PageWrapper({ children }: WithChildren) {
     <>
       <StyledPageWrapper onMouseMove={handleMouseMove}>
         <Header />
-        <PageWrapperBody>{children}</PageWrapperBody>
+        <PageWrapperBody>
+          {children}
+          <PageBottomSpacer />
+        </PageWrapperBody>
       </StyledPageWrapper>
       <WindowCoordinates ref={coordinatesRef}></WindowCoordinates>
     </>

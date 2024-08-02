@@ -10,7 +10,7 @@ export default function ProjectT() {
         <Divider />
       </GridItem>
       <GridItem sizeL={2} sizeM={1}>
-        <h3>Project T</h3>
+        <h2>Project T</h2>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <strong>

@@ -19,6 +19,10 @@ const StyledDetailsRow = styled("div")`
   gap: 24px;
   padding: 8px 0;
 
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
   &:last-child {
     border-bottom: 0;
   }
@@ -26,6 +30,10 @@ const StyledDetailsRow = styled("div")`
 
 const DetailsLabel = styled("b")`
   text-align: right;
+
+  @media (max-width: 600px) {
+    text-align: left;
+  }
 `;
 
 export default function Details({ details }: _props) {

@@ -11,7 +11,7 @@ export default function ProjectPlaceLift() {
         <Divider />
       </GridItem>
       <GridItem sizeL={2} sizeM={1}>
-        <h3>PlaceLift</h3>
+        <h2>PlaceLift</h2>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <strong>

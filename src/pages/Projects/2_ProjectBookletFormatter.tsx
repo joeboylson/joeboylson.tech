@@ -11,7 +11,7 @@ export default function ProjectBookletFormatter() {
         <Divider />
       </GridItem>
       <GridItem sizeL={2} sizeM={1}>
-        <h3>Booklet Formatter</h3>
+        <h2>Booklet Formatter</h2>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <strong>

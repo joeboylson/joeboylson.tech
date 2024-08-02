@@ -11,7 +11,7 @@ export default function ProjectJ() {
         <Divider />
       </GridItem>
       <GridItem sizeL={2} sizeM={1}>
-        <h3>Project J</h3>
+        <h2>Project J</h2>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <strong>

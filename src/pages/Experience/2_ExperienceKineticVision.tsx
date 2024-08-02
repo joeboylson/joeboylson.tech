@@ -10,10 +10,10 @@ export function ExperienceKineticVision() {
       <GridItem sizeL={5} sizeM={3}>
         <Divider />
       </GridItem>
-      <GridItem sizeL={2} sizeM={1}>
-        <h3>Kinetic Vision</h3>
+      <GridItem sizeL={2} sizeM={3}>
+        <h2>Kinetic Vision</h2>
       </GridItem>
-      <GridItem sizeL={3} sizeM={2}>
+      <GridItem sizeL={3} sizeM={3}>
         <Details
           details={[
             ["Position:", "Software Developer"],

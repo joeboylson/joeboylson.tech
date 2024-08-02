@@ -11,7 +11,7 @@ export default function MattBoylsonDotCom() {
         <Divider />
       </GridItem>
       <GridItem sizeL={2} sizeM={1}>
-        <h3>mattboylson.com</h3>
+        <h2>mattboylson.com</h2>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <strong>
