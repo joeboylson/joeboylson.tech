@@ -9,6 +9,7 @@ const StyledTag = styled("div")`
   color: white;
   font-size: 12px;
   font-family: Elios;
+  white-space: nowrap;
 `;
 
 export default function Tag({ children }: WithChildren) {
