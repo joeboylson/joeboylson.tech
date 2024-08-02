@@ -1,28 +1,46 @@
 import { Coffee, TerminalWindow, UserCircle } from "@phosphor-icons/react";
-import "./style.css";
 import MinimalButton from "../MinimalButton";
 import {
   goToBuyMeACoffee,
   goToProfilePage,
   goToProjectsPage,
 } from "../../utils";
+import styled from "styled-components";
+
+const StyledHeader = styled("div")`
+  display: grid;
+  grid-template-columns: repeat(4, 24px);
+  gap: 24px;
+  place-items: center;
+  width: fit-content;
+  margin: 0 auto;
+`;
+
+const HeaderLogo = styled("img")`
+  width: 18px;
+`;
+
+const HeaderNavItem = styled(MinimalButton)`
+  height: calc(24px + 8px + 8px);
+  padding: 8px;
+`;
 
 export default function Header() {
   return (
-    <div id="components-header">
-      <img src="./favicon-32x32.png" alt="Joe Boylson" />
+    <StyledHeader>
+      <HeaderLogo src="./favicon-32x32.png" alt="joeboylson.tech logo" />
 
-      <MinimalButton onClick={goToProfilePage}>
+      <HeaderNavItem onClick={goToProfilePage}>
         <UserCircle size={24} weight="duotone" />
-      </MinimalButton>
+      </HeaderNavItem>
 
-      <MinimalButton onClick={goToProjectsPage}>
+      <HeaderNavItem onClick={goToProjectsPage}>
         <TerminalWindow size={24} weight="duotone" />
-      </MinimalButton>
+      </HeaderNavItem>
 
-      <MinimalButton onClick={goToBuyMeACoffee}>
+      <HeaderNavItem onClick={goToBuyMeACoffee}>
         <Coffee size={24} weight="duotone" />
-      </MinimalButton>
-    </div>
+      </HeaderNavItem>
+    </StyledHeader>
   );
 }

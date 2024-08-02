@@ -6,8 +6,6 @@ const StyledTag = styled("div")`
   width: fit-content;
   border-radius: 100px;
   padding: 0 8px;
-
-  /* TEXT */
   color: white;
   font-size: 12px;
   font-family: Elios;
