@@ -15,7 +15,7 @@ export default function Experience() {
         <p>Below is my CV. It is fully up to date as of 08.02.2023</p>
         <WithLabel label="Download my CV">
           <a
-            href="./resources/Joe Boylson _ Resume.pdf"
+            href="./resources/JoeBoylson_Resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
