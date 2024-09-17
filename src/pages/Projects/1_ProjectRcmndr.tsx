@@ -20,7 +20,7 @@ export default function RCMNDR() {
           songs.
         </strong>
         <p>
-          RCMNDR uses the Spotify for authentication, track search, track
+          RCMNDR uses Spotify for authentication, track search, track
           recommendations, and playlist creation. Upon logging in, the user
           selects up to 3 tracks that the recommendations will be based off of.
           There is a second step where the user can adjust the search parameters

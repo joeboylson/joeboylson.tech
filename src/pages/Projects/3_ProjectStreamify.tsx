@@ -15,7 +15,7 @@ export default function Streamify() {
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <strong>
-          Streamify Demo is a project build in 6 hours to demonstrate my ability
+          Streamify Demo is a project built in 6 hours to demonstrate my ability
           with Frontend Technologies.
         </strong>
         <p>
