@@ -34,6 +34,12 @@ export default function Streamify() {
               text: "Live site",
               target: "_blank",
             },
+            {
+              href: "https://github.com/joeboylson/streamify-demo",
+              label: "View the code",
+              text: "Github Project",
+              target: "_blank",
+            },
           ]}
         />
 

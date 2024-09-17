@@ -37,6 +37,12 @@ export default function RCMNDR() {
               text: "Live site",
               target: "_blank",
             },
+            {
+              href: "https://github.com/joeboylson/rcmndr",
+              label: "View the code",
+              text: "Github Project",
+              target: "_blank",
+            },
           ]}
         />
 
