@@ -7,6 +7,8 @@ import ProjectPlaceLift from "./1_ProjectPlaceLift";
 import ProjectX from "./4_ProjectX";
 import ProjectT from "./5_ProjectT";
 import ProjectJ from "./6_ProjectJ";
+import Streamify from "./3_ProjectStreamify";
+import RCMNDR from "./1_ProjectRcmndr";
 
 export default function Projects() {
   return (
@@ -23,8 +25,10 @@ export default function Projects() {
       </GridItem>
 
       <ProjectPlaceLift />
+      <RCMNDR />
       <ProjectBookletFormatter />
       <MattBoylsonDotCom />
+      <Streamify />
 
       <GridItem sizeL={5} sizeM={3}>
         <Divider />
