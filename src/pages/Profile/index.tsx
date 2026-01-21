@@ -10,7 +10,7 @@ export default function Profile() {
     <Grid>
       <GridItem sizeL={2} sizeM={1}>
         <RoundedWrapper>
-          <img src="./images/profile-picture.jpg" alt="Joe Boylson" />
+          <img src="./images/profile-picture.png" alt="Joe Boylson" />
         </RoundedWrapper>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>

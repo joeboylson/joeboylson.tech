@@ -1,17 +1,18 @@
 import "./index.css";
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import PageWrapper from "./layout/PageWrapper";
 import Router from "./layout/Router";
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
+const rootElement = document.getElementById("root");
 
-root.render(
-  <React.StrictMode>
-    <PageWrapper>
-      <Router />
-    </PageWrapper>
-  </React.StrictMode>
-);
+if (rootElement) {
+  const root = createRoot(rootElement);
+  root.render(
+    <StrictMode>
+      <PageWrapper>
+        <Router />
+      </PageWrapper>
+    </StrictMode>
+  );
+}

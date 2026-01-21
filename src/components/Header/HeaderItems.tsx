@@ -1,8 +1,8 @@
 import {
   IconProps,
-  ReadCvLogo,
-  TerminalWindow,
-  UserCircle,
+  ReadCvLogoIcon,
+  TerminalWindowIcon,
+  UserCircleIcon,
 } from "@phosphor-icons/react";
 import {
   goToExperiencePage,
@@ -23,17 +23,17 @@ const p = phosphorParams; // shorthand
 
 export const headerItems: HeaderItem[] = [
   {
-    component: <UserCircle {...p} />,
+    component: <UserCircleIcon {...p} />,
     onClick: goToProfilePage,
     label: "Profile",
   },
   {
-    component: <TerminalWindow {...p} />,
+    component: <TerminalWindowIcon {...p} />,
     onClick: goToProjectsPage,
     label: "Projects",
   },
   {
-    component: <ReadCvLogo {...p} />,
+    component: <ReadCvLogoIcon {...p} />,
     onClick: goToExperiencePage,
     label: "Experience",
   },
