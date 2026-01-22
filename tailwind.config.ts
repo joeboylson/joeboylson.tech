@@ -5,6 +5,10 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        "sm-600": "600px",
+        "md-800": "800px",
+      },
       colors: {
         background: "var(--color-background)",
         "text-primary": "var(--color-text-primary)",
