@@ -1,6 +1,6 @@
 import { MoonIcon, SunIcon } from "@phosphor-icons/react";
 import { useTheme } from "../../context/ThemeContext";
-import MinimalButton from "../MinimalButton";
+import MinimalButton from "../../components/MinimalButton";
 import styled from "styled-components";
 
 const StyledThemeToggle = styled(MinimalButton)`

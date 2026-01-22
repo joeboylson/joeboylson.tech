@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Header from "../../components/Header";
+import Header from "../Header";
 import { WithChildren } from "../../types";
 import { MouseEventHandler, useRef } from "react";
 
@@ -33,7 +33,7 @@ export default function PageWrapper({ children }: WithChildren) {
     const element = coordinatesRef.current;
     if (element) element.innerHTML = `(${clientX}, ${clientY})`;
 
-    var root = document.querySelector(":root") as HTMLElement;
+    const root = document.querySelector(":root") as HTMLElement;
     root?.style.setProperty("--clientX", `${clientX}px`);
     root?.style.setProperty("--clientY", `${clientY}px`);
   };

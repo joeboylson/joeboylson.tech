@@ -1,10 +1,8 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-type DetailsRow = [ReactNode, ReactNode];
-
 interface _props {
-  details: DetailsRow[];
+  details: (ReactNode | null)[][];
 }
 
 const StyledDetails = styled("div")`

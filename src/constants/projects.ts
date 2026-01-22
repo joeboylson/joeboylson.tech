@@ -7,7 +7,7 @@ export const projects: Project[] = [
     summary:
       "Holy Echoes is a prayer and devotional mobile app for iOS and Android that allows users to browse, search, and save prayers organized by category.",
     description: [
-      "I built Holy Echoes as a personal project to create a simple, beautiful way to access prayers on mobile devices. The app features category-based browsing, a favorites system, and an admin portal for content management.",
+      "A personal project providing a simple, beautiful way to access prayers on mobile devices. Features category-based browsing, a favorites system, and an admin portal for content management.",
     ],
     links: [
       {
@@ -33,31 +33,27 @@ export const projects: Project[] = [
     id: "placelift",
     name: "PlaceLift",
     summary:
-      "PlaceLift is a mobile application and service that assists clients in their home improvement projects from start to finish. PlaceLift provides these services through a mobile app and excellent customer service.",
+      "PlaceLift is a mobile app that provides homeowners with a one-stop-shop for home improvement projects, with a dedicated project manager handling everything behind the scenes.",
     description: [
-      'As CTO of PlaceLift I perform all development tasks on our mobile application and an internal tool called "PlaceLift Connector". This includes turning our mobile app mockups into code, managing our CI/CD to build and deploy to the to App Store (iOS) and Google Play Store (Android), and handling all new releases.',
+      "The complete platform built from the ground up — a Flutter mobile app for iOS and Android, a React admin portal, and all backend systems. Successfully launched to both app stores in 2024.",
     ],
-    note: "As of September 1st, 2024, the PlaceLift team is taking a hiatus. We're proud of the progress we've made since our launch in the spring of 2024, but we need to take this pause to allow us to reassess our needs in terms of time and investment.",
+    note: "PlaceLift stopped operations in 2024.",
     links: [
       {
-        href: "https://placelift.app",
-        label: "Check out our website",
-        text: "PlaceLift Website",
+        href: "https://github.com/joeboylson/placelift",
+        label: "View the code",
+        text: "Github Project",
         external: true,
       },
     ],
     tags: [
-      "Design-to-code",
       "Flutter",
       "React",
       "Typescript",
-      "MUI Components",
       "Express.js",
-      "CI/CD",
-      "Codemagic",
-      "Supabase Realtime Database",
-      "Hubspot integration",
-      "Mobile Push Notifications",
+      "Supabase",
+      "Codemagic CI/CD",
+      "iOS & Android",
     ],
     isOther: false,
   },
@@ -65,9 +61,9 @@ export const projects: Project[] = [
     id: "rcmndr",
     name: "RCMNDR",
     summary:
-      "RCMNDR is an application that leverages the Spotify API to generatate a playlist of 50 songs based off of a few of the user's favorite songs.",
+      "RCMNDR generates Spotify playlists based on a few of your favorite songs using the Spotify API.",
     description: [
-      "RCMNDR uses Spotify for authentication, track search, track recommendations, and playlist creation. Upon logging in, the user selects up to 3 tracks that the recommendations will be based off of. There is a second step where the user can adjust the search parameters based off of Spotify's track characteristics. Finally, a list of recommendations is generated and the user can save this list to a playlist.",
+      "Users log in with Spotify, select up to 3 seed tracks, adjust recommendation parameters, and save the generated playlist directly to their account.",
     ],
     links: [
       {
@@ -86,9 +82,8 @@ export const projects: Project[] = [
     tags: [
       "React",
       "Typescript",
-      "Custom CSS",
       "Express.js",
-      "Spotify API integration",
+      "Spotify API",
     ],
     isOther: false,
   },
@@ -96,9 +91,9 @@ export const projects: Project[] = [
     id: "streamify-demo",
     name: "Streamify Demo",
     summary:
-      "Streamify Demo is a project built in 6 hours to demonstrate my ability with Frontend Technologies.",
+      "A music streaming analytics dashboard built in 6 hours to demonstrate frontend skills.",
     description: [
-      "While job searching, I discovered a prompt for a demo project where the developer was tasked with creating a music streaming dashboard, complete with 3 types of graphs and a table with sorting and filtering. As mentioned above, this project was completed on a Sunday afternoon in a little over 6 hours.",
+      "Built as a one-day challenge: a dashboard with 3 types of graphs and a sortable/filterable data table. Completed on a Sunday afternoon.",
     ],
     links: [
       {
@@ -113,13 +108,50 @@ export const projects: Project[] = [
         text: "Github Project",
         external: true,
       },
+      {
+        href: "https://www.linkedin.com/posts/joeboylson_i-would-like-to-share-a-project-i-started-activity-7238677061073018881-lRW1",
+        label: "Read the LinkedIn post",
+        text: "LinkedIn Post",
+        external: true,
+      },
     ],
     tags: [
       "React",
       "Typescript",
-      "Custom CSS",
       "Data Visualization",
       "Vercel",
+    ],
+    isOther: false,
+  },
+  {
+    id: "vssl",
+    name: "VSSL",
+    summary:
+      "A web app for generating customizable 3D-printable storage containers with configurable compartments.",
+    description: [
+      "Users configure slot dimensions, grid layout, wall thickness, and lid options. The app generates and previews the 3D model in real-time, then exports it as an STL file for 3D printing.",
+    ],
+    links: [
+      {
+        href: "https://github.com/joeboylson/vssl",
+        label: "View the code",
+        text: "Github Project",
+        external: true,
+      },
+      {
+        href: "https://www.linkedin.com/posts/joeboylson_back-again-with-another-app-this-one-is-activity-7244032804240388098-Vl_1",
+        label: "Read the LinkedIn post",
+        text: "LinkedIn Post",
+        external: true,
+      },
+    ],
+    tags: [
+      "React",
+      "Typescript",
+      "Three.js",
+      "Python",
+      "STL Generation",
+      "Supabase",
     ],
     isOther: false,
   },
@@ -127,30 +159,24 @@ export const projects: Project[] = [
     id: "project-x",
     name: "Project X",
     summary:
-      "Project X is a custom-built content management system for a medical technology company that provides a fast and secure way for our clients to upload and share documents, 3D models, and 3D experiences to other users within the company, or external users outside of the company.",
+      "A content management system for a medical technology company to securely share documents, 3D models, and interactive experiences.",
     description: [
-      "This project is very unique due to its content. Most of the content used was .zip files, containing whole applications and experiences that are used for training and informing medical professionals. The challenge of this application centered around security and speed.",
-      "To give a sense of what type of content Project X manages, go to Project J. Project J is an experience I developed that was uploaded and shared from Project X.",
+      "Built with a focus on security and performance for handling large files and applications used to train medical professionals.",
     ],
     related: {
-      label: "Jump to Project J",
-      text: "→ Project J",
-      href: "/projects#:~:text=Azure%20Blob%20Storage-,Project%20J,-Project%20J%20is",
+      label: "View Kinetic Vision experience",
+      text: "→ Kinetic Vision",
+      href: "/experience#kinetic-vision",
       external: false,
     },
     tags: [
-      "Graphic Design",
       "React",
       "Typescript",
       "GraphQL",
       "Flask",
-      "Functional Programming",
-      "SSO Authentication",
       "PostgreSQL",
-      "Docker Compose",
-      "API metrics",
+      "Docker",
       "Azure",
-      "Azure Blob Storage",
     ],
     isOther: true,
   },
@@ -158,19 +184,22 @@ export const projects: Project[] = [
     id: "project-t",
     name: "Project T",
     summary:
-      "Project T is an application built for a consumer goods company in order to scaffold and perform studies on new consumer goods.",
+      "A study management application for a consumer goods company to scaffold and run product studies.",
     description: [
-      "The focus of this application was data management and integrity in order to provide useful and accurate data for an external analysis team.",
+      "Focused on data integrity to provide accurate, reliable data for external analysis teams.",
     ],
+    related: {
+      label: "View Kinetic Vision experience",
+      text: "→ Kinetic Vision",
+      href: "/experience#kinetic-vision",
+      external: false,
+    },
     tags: [
       "React",
       "Typescript",
-      "Custom CSS",
       "Ruby on Rails",
       "MySQL",
-      "SSO Authentication",
-      "Azure App Service",
-      "Azure Blob Storage",
+      "Azure",
     ],
     isOther: true,
   },
@@ -178,22 +207,29 @@ export const projects: Project[] = [
     id: "project-j",
     name: "Project J",
     summary:
-      "Project J is an experience that overlays navigation and information onto a 3D experience.",
+      "An interactive 3D tour experience with navigation and marketing content overlaid on a Matterport space.",
     description: [
-      'Project J was a blast to work on and one of my favorites. It integrated Matterport, a 3D space-capture platform, and a fairly sophisticated SDK integration. The goal was to provide a journey (hence "J") through a 3D space and to show tailored marketing material at each stop in the tour.',
+      "Integrated the Matterport SDK to guide users through a 3D-captured space with tailored content at each stop.",
+    ],
+    links: [
+      {
+        href: "https://matterport.com/",
+        label: "Check out Matterport",
+        text: "Matterport Website",
+        external: true,
+      },
     ],
     related: {
-      label: "Check out Matterport",
-      text: "→ Matterport Website",
-      href: "https://matterport.com/",
-      external: true,
+      label: "View Kinetic Vision experience",
+      text: "→ Kinetic Vision",
+      href: "/experience#kinetic-vision",
+      external: false,
     },
     tags: [
-      "Graphic Design",
       "React",
       "Typescript",
       "Matterport SDK",
-      "Custom Webkit Config",
+      "3D Integration",
     ],
     isOther: true,
   },

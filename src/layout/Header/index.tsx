@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { headerItems } from "./HeaderItems";
-import WithLabel from "../WithLabel";
+import WithLabel from "../../components/WithLabel";
 import ThemeToggle from "../ThemeToggle";
 
 const StyledHeader = styled("div")`
