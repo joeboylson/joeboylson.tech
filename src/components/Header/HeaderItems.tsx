@@ -4,17 +4,12 @@ import {
   TerminalWindowIcon,
   UserCircleIcon,
 } from "@phosphor-icons/react";
-import {
-  goToExperiencePage,
-  goToProfilePage,
-  goToProjectsPage,
-} from "../../utils";
-
+import { Routes } from "../../constants";
 import { ReactNode } from "react";
 
 export type HeaderItem = {
   component: ReactNode;
-  onClick: () => void;
+  to: string;
   label: string;
 };
 
@@ -24,17 +19,17 @@ const p = phosphorParams; // shorthand
 export const headerItems: HeaderItem[] = [
   {
     component: <UserCircleIcon {...p} />,
-    onClick: goToProfilePage,
+    to: Routes.PROFILE,
     label: "Profile",
   },
   {
     component: <TerminalWindowIcon {...p} />,
-    onClick: goToProjectsPage,
+    to: Routes.PROJECTS,
     label: "Projects",
   },
   {
     component: <ReadCvLogoIcon {...p} />,
-    onClick: goToExperiencePage,
+    to: Routes.EXPERIENCE,
     label: "Experience",
   },
 ];

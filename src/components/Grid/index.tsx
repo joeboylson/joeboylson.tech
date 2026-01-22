@@ -13,10 +13,12 @@ export default function Grid({ children }: WithChildren) {
 
     @media (max-width: 800px) {
       grid-template-columns: repeat(3, 1fr);
+      width: 100%;
     }
 
     @media (max-width: 600px) {
       grid-template-columns: 1fr;
+      width: 100%;
     }
   `;
 

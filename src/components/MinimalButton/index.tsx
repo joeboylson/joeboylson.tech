@@ -13,6 +13,8 @@ const StyledMinimalButton = styled("button")`
   outline: none;
   background-color: transparent;
   cursor: pointer;
+  color: var(--color-text-primary);
+  transition: color 0.3s ease;
 `;
 
 export default function MinimalButton({ onClick, children }: _props) {

@@ -1,23 +1,16 @@
-import { Pages } from "../../enums";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes as AppRoutes } from "../../constants";
 import Experience from "../../pages/Experience";
 import Profile from "../../pages/Profile";
 import Projects from "../../pages/Projects";
 
 export default function Router() {
-  const path = window.location.pathname;
-
-  switch (path) {
-    case Pages.PROFILE:
-      return <Profile />;
-
-    case Pages.PROJECTS:
-      return <Projects />;
-
-    case Pages.EXPERIENCE:
-      return <Experience />;
-
-    default:
-      window.location.href = Pages.PROFILE;
-      return <span />;
-  }
+  return (
+    <Routes>
+      <Route path={AppRoutes.PROFILE} element={<Profile />} />
+      <Route path={AppRoutes.PROJECTS} element={<Projects />} />
+      <Route path={AppRoutes.EXPERIENCE} element={<Experience />} />
+      <Route path="*" element={<Navigate to={AppRoutes.PROFILE} replace />} />
+    </Routes>
+  );
 }

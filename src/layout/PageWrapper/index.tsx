@@ -12,26 +12,15 @@ const StyledPageWrapper = styled("div")`
 `;
 
 const PageWrapperBody = styled("div")`
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-border);
   height: calc(100vh - 64px - 1px); // 1px extra fpr border
   overflow-y: auto;
   overflow-x: hidden;
+  transition: border-color 0.3s ease;
 `;
 
 const PageBottomSpacer = styled("div")`
   height: 120px;
-`;
-
-const WindowCoordinates = styled("div")`
-  position: fixed;
-  top: 4px;
-  right: 9px;
-  font-family: Elios;
-  font-size: 12px;
-
-  @media (max-width: 600px) {
-    display: none;
-  }
 `;
 
 export default function PageWrapper({ children }: WithChildren) {
@@ -50,15 +39,12 @@ export default function PageWrapper({ children }: WithChildren) {
   };
 
   return (
-    <>
-      <StyledPageWrapper onMouseMove={handleMouseMove}>
-        <Header />
-        <PageWrapperBody>
-          {children}
-          <PageBottomSpacer />
-        </PageWrapperBody>
-      </StyledPageWrapper>
-      <WindowCoordinates ref={coordinatesRef}></WindowCoordinates>
-    </>
+    <StyledPageWrapper onMouseMove={handleMouseMove}>
+      <Header />
+      <PageWrapperBody>
+        {children}
+        <PageBottomSpacer />
+      </PageWrapperBody>
+    </StyledPageWrapper>
   );
 }

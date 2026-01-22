@@ -12,11 +12,12 @@ export default function WithLabel({ children, label }: _props) {
     &::after {
       font-family: Elios;
       font-size: 12px;
-      background-color: blue;
-      color: white;
+      background-color: var(--color-label-bg);
+      color: var(--color-label-text);
       position: fixed;
       padding: 0 8px;
       border-radius: 24px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     &:hover::after {

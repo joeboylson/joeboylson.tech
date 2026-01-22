@@ -13,11 +13,12 @@ const StyledDetails = styled("div")`
 `;
 
 const StyledDetailsRow = styled("div")`
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-border);
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 24px;
   padding: 8px 0;
+  transition: border-color 0.3s ease;
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
