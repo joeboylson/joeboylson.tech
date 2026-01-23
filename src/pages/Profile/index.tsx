@@ -3,10 +3,13 @@ import Grid from "../../components/Grid";
 import GridItem from "../../components/GridItem";
 import LinkList from "../../components/LinkList";
 import WithLabel from "../../components/WithLabel";
+import { ProfileSEO } from "../../seo";
 
 export default function Profile() {
   return (
-    <Grid>
+    <>
+      <ProfileSEO />
+      <Grid>
       <GridItem sizeL={2} sizeM={1}>
         <div className="!p-[36px]">
           <div
@@ -107,5 +110,6 @@ export default function Profile() {
         />
       </GridItem>
     </Grid>
+    </>
   );
 }

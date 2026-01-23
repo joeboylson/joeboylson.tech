@@ -2,13 +2,16 @@ import Grid from "../../components/Grid";
 import GridItem from "../../components/GridItem";
 import ProjectListItem from "../../layout/ProjectListItem";
 import { projects } from "../../constants";
+import { ProjectsSEO } from "../../seo";
 
 const mainProjects = projects.filter((p) => !p.isOther);
 const otherProjects = projects.filter((p) => p.isOther);
 
 export default function Projects() {
   return (
-    <Grid>
+    <>
+      <ProjectsSEO />
+      <Grid>
       <GridItem sizeL={5} sizeM={2}>
         <h1>Projects</h1>
       </GridItem>
@@ -41,5 +44,6 @@ export default function Projects() {
         <ProjectListItem key={project.id} project={project} />
       ))}
     </Grid>
+    </>
   );
 }

@@ -6,10 +6,13 @@ import Divider from "../../components/Divider";
 import Flow from "../../components/Flow";
 import Tag from "../../components/Tag";
 import { experiences } from "../../constants";
+import { ExperienceSEO } from "../../seo";
 
 export default function Experience() {
   return (
-    <Grid>
+    <>
+      <ExperienceSEO />
+      <Grid>
       <GridItem sizeL={5} sizeM={2}>
         <h1>Experience</h1>
       </GridItem>
@@ -91,5 +94,6 @@ export default function Experience() {
         </>
       ))}
     </Grid>
+    </>
   );
 }

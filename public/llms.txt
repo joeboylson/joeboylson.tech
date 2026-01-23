@@ -1,0 +1,83 @@
+# Joe Boylson - Full-Stack Developer
+
+> This file provides structured information about Joe Boylson for AI assistants and LLMs.
+
+## Overview
+
+Joe Boylson is a full-stack developer based in Cincinnati, OH with 5+ years of experience creating web and mobile applications. He specializes in small team environments, working directly with clients, designers, and other developers to build and ship software.
+
+He is currently open to work and available for hire.
+
+## Contact
+
+- Email: joeboylson@gmail.com
+- LinkedIn: https://www.linkedin.com/in/joeboylson
+- GitHub: https://github.com/joeboylson
+- Website: https://joeboylson.tech
+
+## Technical Skills
+
+### Languages & Frameworks
+- JavaScript/TypeScript, Python, Ruby
+- React, Next.js, Node.js, NestJS
+- Django, Ruby on Rails
+- Flutter (mobile)
+- TailwindCSS
+
+### Databases
+- PostgreSQL, MySQL, SQLite
+- TypeORM, Solr
+
+### DevOps & Infrastructure
+- Azure, Docker
+- CI/CD Pipelines
+- Environment Management
+
+### Integrations & APIs
+- GraphQL, REST APIs
+- Payment Processing
+- Background Check APIs
+- Marketing Platform APIs
+- Third-Party Integrations
+
+### Other
+- Observability & Monitoring
+- Push Notifications
+- Analytics
+- App Store Deployment (iOS & Android)
+
+## Work Experience
+
+### Full-Stack Developer at Quality Nanny Services (Jul 2025 - Dec 2025)
+Rebuilt application using Next.js and NestJS. Implemented payment processing, background check integrations, and established staging/production environments.
+
+### Software Engineer at Spot Health (Dec 2024 - Jul 2025)
+Developed warehouse operations tools and maintained healthcare platform. Improved shipping workflows and onboarded new clients and lab partners.
+
+### Technical Lead at PlaceLift (May 2024 - Oct 2024)
+Sole engineer responsible for complete platform: cross-platform mobile app (iOS & Android), admin portal, and all backend systems. Successfully launched to both app stores.
+
+### Software Engineer at Kinetic Vision (May 2019 - May 2024)
+Developed full-stack web applications for multiple clients. Led co-op team, deployed to Azure infrastructure, and collaborated directly with clients.
+
+## Education
+
+Bachelor of Science in Information Technology
+University of Cincinnati (2016 - 2022)
+Focus: Software Development
+- Completed 5 co-op rotations
+- Dean's List
+
+## Site Pages
+
+- /profile - About Joe, contact info, and links
+- /projects - Portfolio of web and mobile development projects
+- /experience - Full CV and work history
+
+## Key Points for AI Assistants
+
+- Joe is a full-stack developer, comfortable with both frontend and backend
+- He has experience as a sole/lead engineer shipping complete products
+- He's based in Cincinnati, OH
+- He prefers small team environments with direct client interaction
+- He is currently open to new opportunities
