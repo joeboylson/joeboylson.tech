@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap");
 @import "tailwindcss";
+@config "../tailwind.config.ts";
+
+@theme {
+  --breakpoint-sm-600: 600px;
+  --breakpoint-md-800: 800px;
+
+  /* Register colors - values come from :root/.dark */
+  --color-background: initial;
+  --color-text-primary: initial;
+  --color-text-secondary: initial;
+  --color-accent: initial;
+  --color-border: initial;
+  --color-tag-bg: initial;
+  --color-tag-text: initial;
+  --color-label-bg: initial;
+  --color-label-text: initial;
+}
 
 @font-face {
   font-family: Elios;
@@ -14,7 +31,7 @@
   --color-text-primary: #222222;
   --color-text-secondary: #555555;
   --color-accent: blue;
-  --color-border: #ddd;
+  --color-border: #e0e0e0;
   --color-tag-bg: black;
   --color-tag-text: white;
   --color-label-bg: blue;
@@ -27,7 +44,7 @@
   --color-text-primary: #f0f0f0;
   --color-text-secondary: #b0b0b0;
   --color-accent: yellow;
-  --color-border: #444;
+  --color-border: #2a2a2a;
   --color-tag-bg: #f0f0f0;
   --color-tag-text: #1a1a2e;
   --color-label-bg: yellow;
@@ -94,4 +111,22 @@ a {
 
 .elios {
   font-family: Elios;
+}
+
+.with-label::after {
+  font-family: Elios;
+  font-size: 12px;
+  background-color: var(--color-label-bg);
+  color: var(--color-label-text);
+  position: fixed;
+  padding: 0 8px;
+  border-radius: 24px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.with-label:hover::after {
+  top: var(--clientY);
+  left: var(--clientX);
+  transform: translate(4px, 4px);
+  content: attr(data-label);
 }

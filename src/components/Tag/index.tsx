@@ -1,18 +1,12 @@
-import styled from "styled-components";
 import { WithChildren } from "../../types";
 
-const StyledTag = styled("div")`
-  background-color: var(--color-tag-bg);
-  width: fit-content;
-  border-radius: 100px;
-  padding: 0 8px;
-  color: var(--color-tag-text);
-  font-size: 12px;
-  font-family: Elios;
-  white-space: nowrap;
-  transition: background-color 0.3s ease, color 0.3s ease;
-`;
-
 export default function Tag({ children }: WithChildren) {
-  return <StyledTag>{children}</StyledTag>;
+  return (
+    <div
+      data-id="Tag"
+      className="bg-[var(--color-tag-bg)] w-fit rounded-full !px-[8px] text-[var(--color-tag-text)] !text-[12px] !font-[Elios] whitespace-nowrap transition-colors duration-300"
+    >
+      {children}
+    </div>
+  );
 }

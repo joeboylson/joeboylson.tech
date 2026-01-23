@@ -1,51 +1,41 @@
+import clsx from "clsx";
 import { ReactNode } from "react";
-import styled from "styled-components";
 
 interface _props {
   details: (ReactNode | null)[][];
 }
 
-const StyledDetails = styled("div")`
-  display: grid;
-  grid-template-columns: 1fr;
-`;
-
-const StyledDetailsRow = styled("div")`
-  border-bottom: 1px solid var(--color-border);
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 24px;
-  padding: 8px 0;
-  transition: border-color 0.3s ease;
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
-
-  &:last-child {
-    border-bottom: 0;
-  }
-`;
-
-const DetailsLabel = styled("b")`
-  text-align: right;
-
-  @media (max-width: 600px) {
-    text-align: left;
-  }
-`;
-
 export default function Details({ details }: _props) {
   return (
-    <StyledDetails>
-      {details.map(([_1, _2]) => {
+    <div data-id="Details" className="grid grid-cols-[1fr]">
+      {details.map(([_1, _2], index) => {
+        const isLast = index === details.length - 1;
         return (
-          <StyledDetailsRow>
-            <DetailsLabel>{_1}</DetailsLabel>
+          <div
+            data-id="DetailsRow"
+            key={index}
+            className={clsx(
+              // base (mobile)
+              "grid grid-cols-[1fr] gap-6 !py-2 transition-colors duration-300",
+              !isLast && "border-b border-border",
+              // 600px
+              "sm-600:grid-cols-[1fr_2fr]",
+            )}
+          >
+            <b
+              className={clsx(
+                // base (mobile)
+                "text-left",
+                // 600px
+                "sm-600:text-right",
+              )}
+            >
+              {_1}
+            </b>
             <p>{_2}</p>
-          </StyledDetailsRow>
+          </div>
         );
       })}
-    </StyledDetails>
+    </div>
   );
 }

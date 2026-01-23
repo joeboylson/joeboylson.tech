@@ -1,22 +1,28 @@
-import styled from "styled-components";
+import clsx from "clsx";
 
 type _props = {
   sizeM: 3 | 2 | 1;
 };
 
+const colSpanSm600: Record<number, string> = {
+  1: "sm-600:col-span-1",
+  2: "sm-600:col-span-2",
+  3: "sm-600:col-span-3",
+};
+
 export default function SpacerM({ sizeM }: _props) {
-  const StyledSpacerM = styled("div")`
-    display: none;
-
-    @media (max-width: 800px) {
-      display: block;
-      grid-column: span ${sizeM};
-    }
-
-    @media (max-width: 600px) {
-      display: none;
-    }
-  `;
-
-  return <StyledSpacerM />;
+  return (
+    <div
+      data-id="SpacerM"
+      className={clsx(
+        // base - hidden
+        "hidden",
+        // 600px - show with col-span
+        "sm-600:block",
+        colSpanSm600[sizeM],
+        // 800px - hidden again
+        "md-800:hidden"
+      )}
+    />
+  );
 }

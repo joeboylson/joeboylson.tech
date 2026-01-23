@@ -1,26 +1,20 @@
-import styled from "styled-components";
+import clsx from "clsx";
 import { WithChildren } from "../../types";
 
 export default function Grid({ children }: WithChildren) {
-  const StyledGrid = styled("div")`
-    width: calc(100% - (48px * 2));
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 48px;
-    max-width: 1096px;
-    margin: 0 auto;
-    padding: 48px;
-
-    @media (max-width: 800px) {
-      grid-template-columns: repeat(3, 1fr);
-      width: 100%;
-    }
-
-    @media (max-width: 600px) {
-      grid-template-columns: 1fr;
-      width: 100%;
-    }
-  `;
-
-  return <StyledGrid>{children}</StyledGrid>;
+  return (
+    <div
+      data-id="Grid"
+      className={clsx(
+        // base
+        "w-full grid grid-cols-[1fr] gap-12 max-w-[1096px] mx-auto p-12",
+        // 600px
+        "sm-600:grid-cols-[repeat(3,1fr)]",
+        // 800px
+        "md-800:grid-cols-[repeat(5,1fr)] md-800:w-[calc(100%-96px)]"
+      )}
+    >
+      {children}
+    </div>
+  );
 }

@@ -1,24 +1,23 @@
+import clsx from "clsx";
 import { WithChildren } from "../../types";
-import styled from "styled-components";
 
 type _props = WithChildren & {
   onClick: (() => void) | ((event: React.MouseEvent<HTMLElement>) => void);
+  className?: string;
+  "data-id"?: string;
 };
 
-const StyledMinimalButton = styled("button")`
-  width: fit-content;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: var(--color-text-primary);
-  transition: color 0.3s ease;
-`;
-
-export default function MinimalButton({ onClick, children }: _props) {
+export default function MinimalButton({ onClick, children, className, "data-id": dataId }: _props) {
   return (
-    <StyledMinimalButton onClick={onClick}>{children}</StyledMinimalButton>
+    <button
+      data-id={dataId ?? "MinimalButton"}
+      onClick={onClick}
+      className={clsx(
+        "w-fit p-0 m-0 border-0 outline-none bg-transparent cursor-pointer text-text-primary transition-colors duration-300 flex items-center justify-center",
+        className
+      )}
+    >
+      {children}
+    </button>
   );
 }

@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import WithLabel from "../WithLabel";
 
 interface LinkProps {
@@ -12,27 +11,18 @@ interface _props {
   links: LinkProps[];
 }
 
-const StyledLinkList = styled("div")`
-  display: grid;
-  grid-template-columns: 1fr;
-`;
-
-const Link = styled("a")`
-  width: fit-content;
-`;
-
 export default function LinkList({ links }: _props) {
   return (
-    <StyledLinkList>
+    <div data-id="LinkList" className="grid grid-cols-[1fr]">
       {links.map(({ href, text, label, target }) => {
         return (
-          <WithLabel label={label}>
-            <Link href={href} target={target}>
+          <WithLabel label={label} key={href}>
+            <a href={href} target={target} className="w-fit">
               → {text}
-            </Link>
+            </a>
           </WithLabel>
         );
       })}
-    </StyledLinkList>
+    </div>
   );
 }
