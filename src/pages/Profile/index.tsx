@@ -2,16 +2,24 @@ import Divider from "../../components/Divider";
 import Grid from "../../components/Grid";
 import GridItem from "../../components/GridItem";
 import LinkList from "../../components/LinkList";
-import RoundedWrapper from "../../components/RoundedWrapper";
 import WithLabel from "../../components/WithLabel";
 
 export default function Profile() {
   return (
     <Grid>
       <GridItem sizeL={2} sizeM={1}>
-        <RoundedWrapper>
-          <img src="./images/profile-picture.png" alt="Joe Boylson" />
-        </RoundedWrapper>
+        <div className="!p-[36px]">
+          <div
+            className="w-full aspect-square rounded-full"
+            style={{
+              backgroundImage: "url('./images/profile-picture.png')",
+              backgroundSize: "110%",
+              backgroundPosition: "center",
+            }}
+            role="img"
+            aria-label="Joe Boylson"
+          />
+        </div>
       </GridItem>
       <GridItem sizeL={3} sizeM={2}>
         <h1>Hey, I'm Joe</h1>
